@@ -7,7 +7,7 @@ body {
     font-family: sans-serif;
     display: grid;
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 120px auto;
 }
@@ -24,13 +24,17 @@ body > div {
 
 .icon {
     width: 20px;
-    height: auto;
     margin-left: 5px;
     margin-right: 10px;
 }
 
+.profile {
+    width: 30px;
+    margin-right: 10px;
+}
+
 .sidebar {
-    background-color: rgb(0, 89, 145);
+    background-color: rgb(2, 105, 169);
     color: white;
     font-weight: bold;
     position: relative;
@@ -75,7 +79,24 @@ ul > li {
 
 .topNavigation {
     display: grid;
-    grid-template-columns: repeat(5, auto);
+    grid-template-columns: 35px 15fr auto 35px 1fr 1fr;
+    gap: 10px;
+    align-items: center;
+}
+
+.topNavigation > input {
+    background-color: lightgray;
+    border: none;
+    border-radius: 10px;
+    min-width: 20%;
+    max-width: 60%;
+    height: 20px;
+    flex-basis: auto;
+}
+
+.topNavigation > p {
+    font-weight: bold;
+    margin: 0;
 }
 
 .content {
