@@ -1,6 +1,6 @@
 body, p, h2, h5 {
     margin: 0;
-    padding: 0;
+    padding: 2px;
 }
 
 body {
@@ -173,4 +173,24 @@ button {
     display: grid;
     grid-template-rows: 1fr 1fr;
     align-items: start;
+}
+
+.announcementGrid {
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.3) 5px 5px 6px -4px;
+    display: grid;
+}
+
+.announcementItem > p {
+    font-size: smaller;
+    color: gray;
+}
+
+hr {
+    border-style: solid;
+    color: lightgray;
+    border-width: 1px;
+    margin: 15px 0;
 }
