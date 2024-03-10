@@ -1,22 +1,66 @@
+body, h2 {
+    margin: 0;
+    padding: 0;
+}
+
 body {
+    font-family: sans-serif;
     display: grid;
     height: 100vh;
     width: 100%;
-    margin: 0;
-    padding: 0;
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 120px auto;
 }
 
 body > div {
-    padding: 20px;
+    padding: 15px;
+}
+
+.iconLarge {
+    width: 30px;
+    height: auto;
+    margin-right:10px;
+}
+
+.icon {
+    width: 20px;
+    height: auto;
+    margin-left: 5px;
+    margin-right: 10px;
 }
 
 .sidebar {
-    background-color: lightskyblue;
+    background-color: rgb(0, 89, 145);
+    color: white;
+    font-weight: bold;
     position: relative;
     grid-area: 1 / 1 / 3 / 1;
     box-shadow: rgba(0, 0, 0, 0.3) 5px 0px 6px -4px;
+
+    display: grid;
+    grid-auto-rows: max-content;
+    align-items: start;
+    gap: 20px;
+}
+
+.title {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: left;
+}
+
+.sideNavigation > ul {
+    padding: 0;
+    list-style-type: none;
+    display: grid;
+}
+
+ul > li {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: left;
 }
 
 .header {
@@ -24,6 +68,14 @@ body > div {
     position: relative;
     grid-area: 1 / 2 / 1 / 3;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 6px -4px;
+
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+}
+
+.topNavigation {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
 }
 
 .content {
