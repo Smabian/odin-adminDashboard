@@ -1,4 +1,4 @@
-body, p, h2 {
+body, p, h2, h5 {
     margin: 0;
     padding: 0;
 }
@@ -84,7 +84,7 @@ ul > li {
 
 .topNavigation {
     display: grid;
-    grid-template-columns: 35px 15fr auto 35px 35px 1fr;
+    grid-template-columns: 35px 15fr auto 35px 35px 1fr 35px;
     gap: 10px;
     align-items: center;
 }
@@ -122,17 +122,48 @@ button {
     background-color: rgb(2, 105, 169);
     color: white;
     border: none;
-    border-radius: 10px;
+    border-radius: 15px;
     height: 30px;
     width: 100px;
-    margin: 5px;
+    margin: 15px;
     align-self: center;
 
 }
 
 .content {
     grid-area: 2 / 2 / 3 / 3;
-    background-color: lightgray;
-    align-items: center;
+    background-color: rgb(226, 239, 255);
+    align-items: start;
+
+    display: grid;
+    grid-template-columns: 3fr 1fr;
 }
 
+.card {
+    background-color: white;
+    padding: 25px 10px 5px 20px;
+    border-left: 5px orange solid;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 5px 5px 6px -4px;
+    max-width: 300px;
+    height: 150px;
+
+    display: grid;
+    gap: 5px;
+    align-items: start;
+    grid-template-rows: 15px auto 40px;
+}
+
+.card > p {
+    font-size: smaller;
+}
+
+.actionIcons {
+    justify-self: right;
+}
+
+.metaBar {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    align-items: start;
+}
