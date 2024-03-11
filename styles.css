@@ -8,8 +8,9 @@ body {
     display: grid;
     height: 100vh;
     width: 100vw;
+    padding: 0;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 120px auto;
+    grid-template-rows: 130px auto;
 }
 
 body > div {
@@ -29,7 +30,7 @@ body > div {
 }
 
 .profile {
-    width: 30px;
+    width: 40px;
 }
 
 .profileLarge {
@@ -84,8 +85,8 @@ ul > li {
 
 .topNavigation {
     display: grid;
-    grid-template-columns: 35px 15fr auto 35px 35px 1fr 35px;
-    gap: 10px;
+    grid-template-columns: 35px 15fr auto 35px 35px 1fr 15px;
+    gap: 15px;
     align-items: center;
 }
 
@@ -106,7 +107,7 @@ ul > li {
 
 .controlSection {
     display: grid;
-    grid-template-columns: 80px 10fr auto 1fr 1fr 1fr;
+    grid-template-columns: 70px 10fr auto 1fr 1fr 1fr;
 }
 
 .Greeting {
@@ -193,4 +194,33 @@ hr {
     color: lightgray;
     border-width: 1px;
     margin: 15px 0;
+}
+
+.trendingGrid {
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.3) 5px 5px 6px -4px;
+    display: grid;
+    align-items: start;
+    gap: 15px;
+}
+
+.trendingItem {
+    display: grid;
+    grid-template-columns: 55px auto;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+}
+
+.trendingItem > img {
+    grid-area: 1 / 1 / 3 / 2;
+}
+
+.trendingItem > p {
+    padding: 0;
+}
+
+.greyText {
+    color: gray;
 }
